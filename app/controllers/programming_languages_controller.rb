@@ -35,9 +35,9 @@ class ProgrammingLanguagesController < ApplicationController
   end
 
   def destroy
-    @programming_language = ProgrammingLanguage.find(params[:id])
-    @programming_language.destroy
-    redirect_to programming_languages_url, notice: 'Programming language was successfully destroyed.'
+  @programming_language = ProgrammingLanguage.find(params[:id])
+  @programming_language.destroy
+  redirect_to programming_languages_path, notice: 'Programming language was successfully destroyed.'
   end
 
 

@@ -1,0 +1,7 @@
+<h1><%= @programming_language.title %></h1>
+<p><%= @programming_language.description %></p>
+<%= link_to @programming_language.link, @programming_language.link, :target => "_blank" %>
+
+<%= link_to 'Edit', edit_programming_language_path(@programming_language) %>
+<%= button_to 'Delete', programming_language_path(@programming_language), method: :delete, data: { confirm: 'Are you sure?' } %>
+
